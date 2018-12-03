@@ -13,6 +13,12 @@ code {
 
 h1 {
   font-size: 3rem;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .movies-area {
@@ -21,8 +27,30 @@ h1 {
   justify-content: space-evenly;
 }
 
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.profile img {
+  width: 16rem;
+}
+
 .film {
   margin: 1rem;
   width: 14rem;
   padding: 0;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  max-width: 40rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }

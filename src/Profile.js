@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import content from './content.json'
+import { Link } from 'react-router-dom'
 
 class Profile extends Component {
   render() {
@@ -8,6 +9,9 @@ class Profile extends Component {
 
     return (
       <div className="profile">
+        <Link to="/" className="back">
+          Back to Films
+        </Link>
         <h2>{movie.title}</h2>
         <img
           src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${movie.poster_path}`}

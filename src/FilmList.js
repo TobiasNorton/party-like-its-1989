@@ -6,23 +6,27 @@ class FilmList extends Component {
   render() {
     let movieObjects = content.results
     return (
-      <main className="movies-area">
+      <>
         <h3>Movies from 1989 that we'll never forget!</h3>
-        {movieObjects.map((movieObject, index) => {
-          return (
-            <div key={index} className="film">
-              <Link to={`/${movieObject.id}`}>
-                <img
-                  src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${movieObject.poster_path}`}
-                  alt={movieObject.title}
-                />
-              </Link>
+        <main className="movies-area">
+          {movieObjects.map((movieObject, index) => {
+            return (
+              <div key={index} className="film">
+                <Link to={`/${movieObject.id}`}>
+                  <img
+                    src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${
+                      movieObject.poster_path
+                    }`}
+                    alt={movieObject.title}
+                  />
+                </Link>
 
-              <h3>{movieObject.title}</h3>
-            </div>
-          )
-        })}
-      </main>
+                <h3>{movieObject.title}</h3>
+              </div>
+            )
+          })}
+        </main>
+      </>
     )
   }
 }
