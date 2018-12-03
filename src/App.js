@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Film from './Film'
+import Profile from './Profile'
 
 class App extends Component {
   render() {
@@ -11,20 +12,8 @@ class App extends Component {
 
         <main className="movies-area">
           <Film />
-          <div>
-            <h3>Another Movie Title</h3>
-            <p>1989-08-01</p>
-            <img src="#" alt="Another Movie Title" />
-            <p>Overview</p>
-          </div>
-
-          <div>
-            <h3>TMNT</h3>
-            <p>1989-05-24</p>
-            <img src="#" alt="TMNT" />
-            <p>Overview</p>
-          </div>
         </main>
+        <Profile />
       </div>
     )
   }
