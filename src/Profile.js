@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
+import content from './content.json'
 
 class Profile extends Component {
   render() {
+    let movieId = parseInt(this.props.match.params.id)
+    let movie = content.results.find(film => film.id === movieId)
+
     return (
       <div className="profile">
-        <h3>Indiana Jones and the Last Crusade</h3>
+        <h2>{movie.title}</h2>
         <img
-          src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/4p1N2Qrt8j0H8xMHMHvtRxv9weZ.jpg"
-          alt="Movie Title"
+          src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${movie.poster_path}`}
+          alt={movie.title}
         />
-        <p>Release Date: 1989-05-24</p>
-        <p>
-          When Dr. Henry Jones Sr. suddenly goes missing while pursuing the Holy Grail, eminent
-          archaeologist Indiana must team up with Marcus Brody, Sallah and Elsa Schneider to follow
-          in his father's footsteps and stop the Nazis from recovering the power of eternal life.
-        </p>
+        <p>Release date: {movie.release_date}</p>
+        <p>{movie.overview}</p>
       </div>
     )
   }
