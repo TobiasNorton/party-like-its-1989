@@ -32,6 +32,12 @@ h2 {
   text-shadow: 4px 0px 4px hsla(185, 0%, 0%, 0.84);
 }
 
+.profile h2 {
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
 h3 {
   font-family: 'Open Sans', sans-serif;
   color: white;
@@ -61,7 +67,7 @@ h3 {
 }
 
 .back:hover {
-  font-size: 1.7rem;
+  font-size: 1rem;
 }
 
 .profile img {
