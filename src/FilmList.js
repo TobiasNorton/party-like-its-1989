@@ -7,7 +7,7 @@ class FilmList extends Component {
     let movieObjects = content.results
     return (
       <>
-        <h3>Movies from 1989 that we'll never forget!</h3>
+        <h2>Movies from 1989 that we'll never forget!</h2>
         <main className="movies-area">
           {movieObjects.map((movieObject, index) => {
             return (
