@@ -13,7 +13,7 @@ class App extends Component {
         <main className="movies-area">
           <Film />
         </main>
-        <Profile />
+        {/* <Profile /> */}
       </div>
     )
   }
